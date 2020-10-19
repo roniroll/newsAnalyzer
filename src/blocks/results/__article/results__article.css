@@ -1,0 +1,6 @@
+.results__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 24px 24px;
+}

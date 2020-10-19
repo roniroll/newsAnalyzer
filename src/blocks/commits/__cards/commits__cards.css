@@ -1,0 +1,5 @@
+.commits__cards {
+  display: flex;
+  margin: 64px 104px 0;
+  justify-content: space-between;
+}

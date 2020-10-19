@@ -1,0 +1,10 @@
+.footer__icon {
+  display: flex;
+  margin-right: 105px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .footer__icon {
+    margin-right: 0;
+  }
+}

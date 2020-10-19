@@ -1,0 +1,6 @@
+.commits__card {
+  border-radius: 16px;
+  background-color: #fff;
+  width: 32%;
+  min-height: 288px;
+}

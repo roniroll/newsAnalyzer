@@ -1,0 +1,21 @@
+.results__else {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1A1B22;
+  width: 288px;
+  height: 64px;
+  border-radius: 80px;
+  background-color: #fff;
+  border-style: none;
+  margin: 64px auto 0;
+  border: none;
+  outline: none;
+}

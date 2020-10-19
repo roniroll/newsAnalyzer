@@ -1,0 +1,5 @@
+.infographics__counts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 104px 0 208px;
+}

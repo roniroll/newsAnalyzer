@@ -1,0 +1,21 @@
+.author__image {
+  max-width: 464px;
+  max-height: 464px;
+  background-color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .author__image {
+    max-width: 372px;
+    max-height: 372px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .author__image {
+    max-width: 232px;
+    max-height: 232px;
+    margin-top: 50px;
+  }
+}

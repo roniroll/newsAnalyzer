@@ -1,0 +1,12 @@
+.analytics__nav {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+}
+
+.analytics__nav_no-active {
+  color: #B6BCBF;
+}

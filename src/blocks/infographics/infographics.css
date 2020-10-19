@@ -1,0 +1,16 @@
+@import url(./__title/infographics__title.css);
+@import url(./__count-mention/ingographics__count-mention.css);
+@import url(./__date/infographics__date.css);
+@import url(./__info/infographics__info.css);
+@import url(./__count/infographics__count.css);
+@import url(./__counts/infographics__counts.css);
+@import url(./__chart/infographics__chart.css);
+@import url(./__dates/infographics__dates.css);
+@import url(./__day/infographics__day.css);
+@import url(./__line/infographics__line.css);
+@import url(./__lines/infographics__lines.css);
+
+.infographics {
+  min-height: 866px;
+  background-color: #F5F6F7;
+}
