@@ -4,3 +4,9 @@
   max-height: 272px;
   width: 100%;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .results__image {
+    width: 100%;
+  }
+}

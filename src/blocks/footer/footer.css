@@ -12,10 +12,3 @@
   min-height: 80px;
   align-items: center;
 }
-
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  .footer {
-    max-width: 688px;
-    margin: 0 auto;
-  }
-}

@@ -2,3 +2,10 @@
   display: flex;
   margin-left: 178px;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .technologies__logo {
+    margin: 40px 40px 0;
+    justify-content: space-between;
+  }
+}

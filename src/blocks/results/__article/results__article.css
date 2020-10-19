@@ -4,3 +4,11 @@
   justify-content: space-between;
   margin: 20px 24px 24px;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .results__article {
+    margin: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

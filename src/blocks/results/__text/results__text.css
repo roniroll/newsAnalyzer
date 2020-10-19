@@ -8,3 +8,11 @@
   margin-top: 12px;
   margin-bottom: 0;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .results__text {
+    text-overflow: ellipsis;
+    max-height: 88px;
+    overflow: hidden;
+  }
+}

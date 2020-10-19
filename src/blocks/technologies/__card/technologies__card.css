@@ -2,3 +2,9 @@
   margin-top: 93px;
   margin-left: 40px;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .technologies__card {
+    margin: 0;
+  }
+}

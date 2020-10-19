@@ -1,8 +1,7 @@
-@import url(./__image/author__image.css);
 @import url(./__description/author__description.css);
-@import url(./__description/__sub-title/author__sub-title.css);
-@import url(./__description/__title/author__title.css);
-
+@import url(./__image/author__image.css);
+@import url(./__sub-title/author__sub-title.css);
+@import url(./__title/author__title.css);
 
 .author {
   display: flex;
@@ -10,14 +9,8 @@
   margin: 80px auto;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .author {
-    max-width: 850px;
-  }
-}
-
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  .author {
-    max-width: 682px;
+    margin: 11px 40px 65px;
   }
 }

@@ -19,3 +19,9 @@
   border: none;
   outline: none;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .results__else {
+    margin: 22px auto 0;
+  }
+}

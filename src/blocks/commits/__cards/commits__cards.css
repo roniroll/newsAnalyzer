@@ -3,3 +3,9 @@
   margin: 64px 104px 0;
   justify-content: space-between;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .commits__cards {
+    margin: 32px 40px 0;
+  }
+}
