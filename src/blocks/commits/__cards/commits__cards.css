@@ -9,3 +9,9 @@
     margin: 32px 40px 0;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .commits__cards {
+    margin: 20px 28px 0;
+  }
+}
