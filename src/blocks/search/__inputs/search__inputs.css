@@ -19,3 +19,12 @@
     margin-top: 24px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search__inputs {
+    width: 288px;
+    height: 56px;
+    margin-top: 64px;
+    display: block;
+  }
+}

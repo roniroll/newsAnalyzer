@@ -47,6 +47,10 @@ module.exports = {
         use: 'file-loader?name=./images/[name].[ext]&esModule=false'
       },
       {
+        test: /\.(ico)$/,
+        use: 'file-loader?name=assets/[name].[ext]'
+      },
+      {
         test: /\.js$/,
         enforce: 'pre',
         use: ['source-map-loader']

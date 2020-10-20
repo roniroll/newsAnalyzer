@@ -10,3 +10,9 @@
 .analytics__nav_no-active {
   color: #B6BCBF;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analytics__nav {
+    display: none;
+  }
+}

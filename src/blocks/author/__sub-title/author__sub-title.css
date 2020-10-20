@@ -13,3 +13,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .author__sub-title {
+    margin-top: 16px;
+  }
+}

@@ -14,3 +14,11 @@
      margin: 40px 0 20px 0;
    }
  }
+
+ @media (min-width: 320px) and (max-width: 767px) {
+  .author__title {
+    margin: 24px auto 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

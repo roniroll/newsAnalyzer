@@ -8,3 +8,9 @@
     margin-left: 32px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .author__description {
+    margin: 24px 16px 0;
+  }
+}

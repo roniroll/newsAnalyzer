@@ -24,3 +24,10 @@
     min-height: 64px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+  max-height: 56px;
+  margin-bottom: -20px;
+  }
+}

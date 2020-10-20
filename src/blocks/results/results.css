@@ -22,3 +22,9 @@
     padding: 40px 0 20px 0;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .results {
+    padding: 20px 0 44px 0;
+  }
+}

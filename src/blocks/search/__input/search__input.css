@@ -17,3 +17,10 @@
     width: 292px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search__input {
+    width: 245px;
+    margin-top: 16px;
+  }
+}

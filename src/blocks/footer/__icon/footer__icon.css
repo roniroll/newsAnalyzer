@@ -8,3 +8,11 @@
     margin-right: 42px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__icon {
+    order: 2;
+    margin: 0;
+    margin: -75px 20px 0 27px;
+  }
+}

@@ -18,10 +18,21 @@
   margin: 64px auto 0;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .results__else {
     margin: 22px auto 0;
   }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .results__else {
+    margin: 16px auto 0;
+  }
+}
+
+.results__else:hover {
+  opacity: .9;
 }

@@ -13,3 +13,9 @@
     line-height: 34px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .clients__title {
+    line-height: 40px;
+  }
+}

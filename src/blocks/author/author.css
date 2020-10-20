@@ -14,3 +14,9 @@
     margin: 11px 40px 65px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .author {
+    flex-direction: column;
+  }
+}

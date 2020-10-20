@@ -14,3 +14,14 @@
     grid-gap: 6px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .results__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 8px;
+    margin: 36px 16px 0;
+  }
+}
+
+

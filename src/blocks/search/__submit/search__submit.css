@@ -13,11 +13,28 @@
   border: none;
   outline: none;
   color: #fff;
+  cursor: pointer;
+}
+
+.search__submit:hover {
+  background: #347EFF;
+}
+
+.search__submit:active {
+  background: #2A65CC;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .search__submit {
     width: 160px;
     height: 56px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search__submit {
+    width: 288px;
+    height: 56px;
+    margin-top: 33px;
   }
 }

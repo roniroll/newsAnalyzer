@@ -2,3 +2,13 @@
   display: flex;
   list-style: none;
 }
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__list {
+    flex-direction: column;
+    order: 1;
+    margin: 20px 0 0 16px;
+    padding: 0;
+  }
+}

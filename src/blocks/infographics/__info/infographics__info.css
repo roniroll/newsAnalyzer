@@ -4,3 +4,15 @@
   border: none;
   border-bottom: 1px solid #1A1B22;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .infographics__info {
+    margin: 49px 40px 0 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .infographics__info {
+    margin: 16px 0 0 16px;
+  }
+}

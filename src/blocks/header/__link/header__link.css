@@ -47,3 +47,18 @@
     padding-bottom: 17px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__link {
+    font-size: 16px;
+  }
+  .header__link:first-child {
+    margin-right: 11px;
+  }
+  .header__link_active-dark {
+    padding-bottom: 28px;
+  }
+  .header__link_active-white {
+    padding-bottom: 28px;
+  }
+}
