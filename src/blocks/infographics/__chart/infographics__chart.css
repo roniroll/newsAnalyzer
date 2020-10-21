@@ -1,0 +1,17 @@
+.infographics__chart {
+  display: flex;
+  margin: 5px 104px 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .infographics__chart {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .infographics__chart {
+    margin: 0 16px;
+  }
+}

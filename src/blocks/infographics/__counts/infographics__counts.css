@@ -1,0 +1,18 @@
+.infographics__counts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 104px 0 208px;
+}
+
+@media (min-width: 320px) and (max-width: 1439px) {
+  .infographics__counts {
+    margin: 0 43px 0 157px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .infographics__counts {
+    display: none;
+  }
+}

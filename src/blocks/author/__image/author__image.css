@@ -1,0 +1,22 @@
+.author__image {
+  max-width: 464px;
+  max-height: 464px;
+  background-color: #FFFFFF;
+}
+
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .author__image {
+    max-width: 372px;
+    max-height: 372px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .author__image {
+    max-width: 272px;
+    max-height: 272px;
+    margin: 32px auto 0;
+  }
+}

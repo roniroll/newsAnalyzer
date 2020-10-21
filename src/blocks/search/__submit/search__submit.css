@@ -1,0 +1,40 @@
+.search__submit {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 168px;
+  height: 64px;
+  background: #2F71E5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  z-index: 2;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search__submit:hover {
+  background: #347EFF;
+}
+
+.search__submit:active {
+  background: #2A65CC;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .search__submit {
+    width: 160px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search__submit {
+    width: 288px;
+    height: 56px;
+    margin-top: 33px;
+  }
+}

@@ -1,0 +1,18 @@
+.clients__info {
+  max-width: 815px;
+  margin: 80px 0 94px 104px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .clients__info {
+    max-width: 688px;
+    margin: 16px auto 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .clients__info {
+    max-width: 288px;
+    margin: 16px auto 0;
+  }
+}

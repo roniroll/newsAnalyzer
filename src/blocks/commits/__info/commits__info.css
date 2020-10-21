@@ -1,0 +1,20 @@
+.commits__info {
+  margin: 0 104px;
+  padding-top: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .commits__info {
+    padding-top: 40px;
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .commits__info {
+    margin: 32px 0 0 16px;
+    padding-top: 0;
+  }
+}

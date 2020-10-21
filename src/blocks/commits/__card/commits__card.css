@@ -1,0 +1,19 @@
+.commits__card {
+  border-radius: 16px;
+  background-color: #fff;
+  width: 32%;
+  min-height: 288px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .commits__card:nth-of-type(2) {
+    display: none;
+  }
+  .commits__card:nth-of-type(3) {
+    display: none;
+  }
+  .commits__card {
+    width: 100%;
+
+  }
+}

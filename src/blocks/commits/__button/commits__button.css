@@ -1,0 +1,26 @@
+.commits__button {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1A1B22;
+  text-decoration: none;
+  width: 288px;
+  margin: 48px auto;
+  border-radius: 100px;
+  height: 48px;
+}
+
+@media (min-width: 768px) {
+  .commits__button {
+    display: none;
+  }
+}
+
+.commits__button_link {
+  width: 150px;
+}

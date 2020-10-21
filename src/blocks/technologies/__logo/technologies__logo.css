@@ -1,0 +1,20 @@
+.technologies__logo {
+  display: flex;
+  margin-left: 178px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .technologies__logo {
+    margin: 40px 40px 0;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .technologies__logo {
+    flex-wrap: wrap;
+    margin: 39px 25px 0;
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+}

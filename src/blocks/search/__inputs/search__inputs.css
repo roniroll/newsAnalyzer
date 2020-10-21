@@ -1,0 +1,30 @@
+.search__inputs {
+  margin-top: 64px;
+  display: flex;
+  width: 608px;
+  height: 64px;
+  background: #fff;
+  border: 1px solid #d1d2d6;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .search__inputs {
+    width: 448px;
+    height: 56px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search__inputs {
+    width: 288px;
+    height: 56px;
+    margin-top: 64px;
+    display: block;
+  }
+}

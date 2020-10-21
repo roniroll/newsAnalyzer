@@ -1,0 +1,23 @@
+@import url(./__list/analytics__list.css);
+@import url(./__mention/analytics__mention.css);
+@import url(./__nav/analytics__nav.css);
+@import url(./__request/analytics__request.css);
+@import url(./__week/analytics__week.css);
+
+.analytics {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 80px 104px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .analytics {
+    margin: 32px 0 0 40px ;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analytics {
+    margin: 36px 0 0 24px;
+  }
+}

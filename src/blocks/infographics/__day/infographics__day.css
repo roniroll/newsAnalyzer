@@ -1,0 +1,10 @@
+.infographics__day {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 80px;
+  color: #1A1B22;
+  display: flex;
+  width: 104px;
+}

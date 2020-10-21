@@ -1,0 +1,18 @@
+.results__info {
+  display: flex;
+  justify-content: space-between;
+  margin:0 104px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .results__info {
+    margin: 40px 47px 0 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .results__info {
+    margin: 32px 16px 0;
+    flex-direction: column;
+  }
+}
