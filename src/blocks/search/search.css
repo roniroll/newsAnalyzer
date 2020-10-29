@@ -2,8 +2,9 @@
 @import url(./__sub-title/search__sub-title.css);
 @import url(./__title/search__title.css);
 @import url(./__input/search__input.css);
-@import url(./__inputs/search__inputs.css);
+@import url(./__form/search__inputs.css);
 @import url(./__submit/search__submit.css);
+@import url(./__error/search__error.css);
 
 .search {
   height: 576px;
