@@ -6,5 +6,9 @@
   background-color: #f5f6f7;
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
+.loader_visible {
+  display: block;
+}
