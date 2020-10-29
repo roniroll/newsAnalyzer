@@ -1,11 +1,15 @@
-class DataStorage {
-  constructor(data) {
-    data = this.data
+export default class DataStorage {
+
+  setDataStorage (data) {
+    localStorage.setItem('totalResults', data.totalResults)
+    localStorage.setItem('articles', JSON.stringify(data.articles))
   }
 
-  saveDataStorage (data) {
-    const dataInfo = localStorage.setItem(data)
-    return dataInfo
+  getTotalResults () {
+   return localStorage.getItem('totalResults')
   }
 
+  getArticles () {
+    return JSON.parse(getItem('articles'))
+  }
 }

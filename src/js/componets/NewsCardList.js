@@ -4,13 +4,14 @@ export default class NewsCardList {
     this.createCard = createCard
   }
 
-  addCard(source, title, publishedAt, description, url) {
-    this.domElement.appendChild(this.createCard(source, title, publishedAt, description, url))
+  addCard(source, title, publishedAt, description, url, link) {
+    this.domElement.appendChild(this.createCard(source, title, publishedAt, description, url, link))
   }
 
   render(result) {
-    result.foreach(item => {
-      this.addCard(item.source, item.title, item.publishedAt, item.description, item.url)
+    this.domElement.innerHTML = '';
+    result.forEach(item => {
+      this.addCard(item.source, item.title, item.publishedAt, item.description, item.urlToImage, item.url)
     })
   }
 }

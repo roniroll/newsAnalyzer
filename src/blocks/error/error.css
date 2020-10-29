@@ -1,0 +1,12 @@
+@import url(./__text/error__text.css);
+
+.error {
+  background-color:#F5F6F7;
+  min-height: 374px;
+  display: none;
+  align-items: center;
+}
+
+.error_visible {
+  display: flex;
+}

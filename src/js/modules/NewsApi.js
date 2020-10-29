@@ -15,9 +15,7 @@ export default class NewsApi {
       return Promise.reject(res.status)
     })
     .then((data) => {
-      const arreyData = data
-      console.log(arreyData)
-      return arreyData
+      return data
     })
     .catch((err) => {
       console.log(err)
