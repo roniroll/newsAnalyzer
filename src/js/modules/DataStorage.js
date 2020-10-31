@@ -10,6 +10,6 @@ export default class DataStorage {
   }
 
   getArticles () {
-    return JSON.parse(getItem('articles'))
+    return JSON.parse(localStorage.getItem('articles'))
   }
 }

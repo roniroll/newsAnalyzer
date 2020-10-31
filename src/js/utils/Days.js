@@ -14,6 +14,9 @@ export function returnLastDay () {
   return lastDayForRequest
 }
 
-
+export function formatDate () {
+  const date = new Date('2020-10-26');
+  return `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`
+}
 
 

@@ -7,12 +7,15 @@
   color: #1A1B22;
   margin-top: 12px;
   margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  visibility: visible;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .results__text {
-    text-overflow: ellipsis;
-    max-height: 88px;
-    overflow: hidden;
+  -webkit-line-clamp: 4;
   }
 }

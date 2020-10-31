@@ -15,6 +15,7 @@ export default class NewsApi {
       return Promise.reject(res.status)
     })
     .then((data) => {
+      console.log(data)
       return data
     })
     .catch((err) => {
