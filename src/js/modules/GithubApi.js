@@ -12,7 +12,6 @@ export default class GithubApi {
         return Promise.reject((res.status))
       })
      .then((data) => {
-      console.log(data)
       return data
      })
      .catch((err) => {

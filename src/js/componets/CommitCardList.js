@@ -10,7 +10,8 @@ export default class CommitCardList {
 
   render (result) {
     result.forEach(item => {
-      this.addCard(item.commit.committer.name, item.commit.committer.email, item.commit.committer.date, item.commit.message, item.author.avatar_url)
+      this.addCard(item.commit.committer.name, item.commit.committer.email, item.commit.committer.date,
+        item.commit.message, item.author.avatar_url)
     })
   }
 }

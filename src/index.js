@@ -1,8 +1,5 @@
 import './pages/index-page.css';
 import './pages/analytics-page.css';
-
-
-//Импорт классов
 import NewsApi from './js/modules/NewsApi.js';
 import DataStorage from './js/modules/DataStorage.js';
 import NewsCard from './js/componets/NewsCard.js'
