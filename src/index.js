@@ -1,7 +1,6 @@
-//Подключение стилей
-import './pages/index-page.css'
+import './pages/index-page.css';
 import './pages/analytics-page.css';
-import './pages/about-page.css';
+
 
 //Импорт классов
 import NewsApi from './js/modules/NewsApi.js';
@@ -16,7 +15,7 @@ import {returnLastDay, returnTodayDay, formatDate} from './js/utils/Days.js';
 //Экземпляры классов
 const searchForm = document.querySelector('.search__form');
 const input = document.querySelector('.search__input');
-const newsApi = new NewsApi('http://newsapi.org/v2/everything?language=ru&', 'd7b692823f6c428a94d9dfb072ebd467', returnTodayDay(), returnLastDay());
+const newsApi = new NewsApi('https://nomoreparties.co/news/v2/everything?', 'd7b692823f6c428a94d9dfb072ebd467', returnTodayDay(), returnLastDay());
 const dataStorage = new DataStorage();
 const newsCardList = new NewsCardList(document.querySelector('.results__cards'), createCardFunction);
 const searchInput = new SearchInput(submitSearchForm, searchForm, input);
@@ -24,6 +23,7 @@ const noResults = document.querySelector('.no-results');
 const results = document.querySelector('.results');
 const loader = document.querySelector('.loader');
 const err = document.querySelector('.error');
+const buttonShowMore = document.querySelector('.results__else');
 
 function createCardFunction(source, title, publishedAt, description, url, link) {
   return new NewsCard(source, title, publishedAt, description, url, link).createCard()
@@ -32,6 +32,7 @@ function createCardFunction(source, title, publishedAt, description, url, link) 
 function submitSearchForm(text) {
   err.classList.remove('error_visible');
   loader.classList.add('loader_visible');
+  newsCardList.reset();
   newsApi.getNews(text)
     .then((data) => {
       dataStorage.setDataStorage(data)
@@ -39,7 +40,9 @@ function submitSearchForm(text) {
         //вынести в функцию
         noResults.classList.remove('no-results_visible')
         results.classList.add('results_visible')
-        newsCardList.render(data.articles)
+        if (!newsCardList.showMore(data.articles)) {
+          buttonShowMore.classList.add('results__else_visible')
+        }
       } else {
         //вынести в функцию
         noResults.classList.add('no-results_visible')
@@ -56,6 +59,8 @@ function submitSearchForm(text) {
 
 searchInput.setEventListeners()
 
-
-// Прижать футтер
-
+buttonShowMore.addEventListener('click', () => {
+  if (newsCardList.showMore(dataStorage.getArticles())) {
+    buttonShowMore.classList.remove('results__else_visible')
+  }
+})

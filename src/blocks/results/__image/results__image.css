@@ -2,6 +2,16 @@
   border-radius: 16px 16px 0 0;
   height: 272px;
   width: 100%;
+  max-width: 400px;
+  image-rendering: crisp-edges;
+}
+
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .results__image {
+    max-width: 100%;
+    height: 150px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 1439px) {

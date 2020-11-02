@@ -25,7 +25,7 @@ export default  class NewsCard {
     text.className = 'results__text';
     newsAgency.className = 'results__news-agency';
 
-    date.textContent = this.publishedAt
+    date.textContent = this.formatDate(this.publishedAt)
     text.innerHTML = this.description
     if (this.url == null) {
       this.url = 'https://upload.wikimedia.org/wikipedia/commons/9/9a/%D0%9D%D0%B5%D1%82_%D1%84%D0%BE%D1%82%D0%BE.png'
@@ -46,4 +46,26 @@ export default  class NewsCard {
     })
     return card
   }
+
+  formatDate (publishedAt) {
+    const date = new Date(publishedAt);
+    const mounth = {
+      '0': 'января',
+      '1': 'февраля',
+      '2': 'марта',
+      '3': 'апреля',
+      '4': 'мая',
+      '5': 'июня',
+      '6': 'июля',
+      '7': 'августа',
+      '8': 'сентября',
+      '9': 'октября',
+      '10': 'ноября',
+      '11': 'декабря',
+    }
+      if (date.getDate() <= 9) {
+        return  `0${date.getDate()} ${mounth[date.getMonth()]}, ${date.getFullYear()}`
+      }
+      return `${date.getDate()} ${mounth[date.getMonth()]}, ${date.getFullYear()}`
+}
 }

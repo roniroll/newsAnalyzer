@@ -1,14 +1,13 @@
 .results__article {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 20px 24px 24px;
+  margin: 4px 20px 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .results__article {
     margin: 16px;
-    overflow: hidden;
     text-overflow: ellipsis;
+    max-height: 388px;
   }
 }
