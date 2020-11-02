@@ -1,7 +1,6 @@
-//Подключение стилей
-import './pages/index-page.css'
+import './pages/index-page.css';
 import './pages/analytics-page.css';
-import './pages/about-page.css';
+
 
 //Импорт классов
 import NewsApi from './js/modules/NewsApi.js';
@@ -25,8 +24,6 @@ const results = document.querySelector('.results');
 const loader = document.querySelector('.loader');
 const err = document.querySelector('.error');
 const buttonShowMore = document.querySelector('.results__else');
-
-console.log(formatDate())
 
 function createCardFunction(source, title, publishedAt, description, url, link) {
   return new NewsCard(source, title, publishedAt, description, url, link).createCard()
@@ -67,5 +64,3 @@ buttonShowMore.addEventListener('click', () => {
     buttonShowMore.classList.remove('results__else_visible')
   }
 })
-
-

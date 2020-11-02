@@ -8,7 +8,11 @@ const webpack = require('webpack');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: {
+    main: './src/index.js',
+    about: './src/about/index.js',
+    analytics: './src/analytics/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chankhash].js'
