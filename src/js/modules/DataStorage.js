@@ -12,4 +12,12 @@ export default class DataStorage {
   getArticles () {
     return JSON.parse(localStorage.getItem('articles'))
   }
+
+  setKeyWord (word) {
+    localStorage.setItem('keyword', word)
+  }
+
+  getKeyWord () {
+    return localStorage.getItem('keyword')
+  }
 }

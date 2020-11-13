@@ -1,5 +1,4 @@
 import './pages/index-page.css';
-import './pages/analytics-page.css';
 import NewsApi from './js/modules/NewsApi.js';
 import DataStorage from './js/modules/DataStorage.js';
 import NewsCard from './js/componets/NewsCard.js'
@@ -33,6 +32,7 @@ function submitSearchForm(text) {
   newsApi.getNews(text)
     .then((data) => {
       dataStorage.setDataStorage(data)
+      dataStorage.setKeyWord(text)
       if (data.totalResults) {
         //вынести в функцию
         noResults.classList.remove('no-results_visible')
@@ -61,3 +61,4 @@ buttonShowMore.addEventListener('click', () => {
     buttonShowMore.classList.remove('results__else_visible')
   }
 })
+

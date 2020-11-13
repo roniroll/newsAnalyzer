@@ -7,6 +7,8 @@
   <meta name="author" content="Nedospasov N.V.">
   <title>About</title>
   <link rel="shortcut icon" href="./images/Group__favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body class="main">
   <header class="header header_about">
@@ -81,8 +83,14 @@
       <h2 class="commits__title">История коммитов из GitHub</h2>
       <a href="https://github.com/roniroll/newsAnalyzer" target="_blank" class="commits__link">Открыть в  Github<img class="commits__arrow" src="./images/Path 5.png"></a>
     </div>
-    <div class="commits__cards">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+
     </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
     <button class="commits__button"><a href="https://github.com/roniroll/newsAnalyzer" class="commits__button commits__button_link" target="_blank">Открыть в GitHub</a> </button>
   </section>
   <footer class="footer">
@@ -105,6 +113,8 @@
       <img class="footer__image" src="<%=require('./images/fb-icon.png')%>" alt="Иконка фейсбук">
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
 

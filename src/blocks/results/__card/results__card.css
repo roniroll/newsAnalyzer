@@ -8,8 +8,13 @@
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .results__card {
-    max-height: 420px;
     max-width: 100%;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .results__card {
+    max-width: 100%;
   }
 }
