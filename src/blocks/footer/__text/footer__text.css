@@ -10,15 +10,15 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  .footer__text {
-    margin-left: 24px;
-  }
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
   .footer__text {
     margin: 0;
     line-height: 48px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 785px) {
+  .footer__text {
+    font-size: 16px;
   }
 }

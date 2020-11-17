@@ -8,7 +8,7 @@ export default class CommitCard {
   }
 
   createCard() {
-    const commitsCard = document.createElement('div');
+    const wiperSlide = document.createElement('div');
     const commitsDate = document.createElement('p');
     const commitsBlock = document.createElement('div');
     const commitsImage = document.createElement('img');
@@ -17,7 +17,7 @@ export default class CommitCard {
     const commitsEmail = document.createElement('p');
     const commitsText = document.createElement('p')
 
-    commitsCard.classList.add('commits__card');
+    wiperSlide.classList.add('swiper-slide');
     commitsDate.classList.add('commits__date');
     commitsBlock.classList.add('commits__block');
     commitsImage.classList.add('commits__image');
@@ -30,9 +30,9 @@ export default class CommitCard {
     commitsPersonal.appendChild(commitsEmail);
     commitsBlock.appendChild(commitsImage);
     commitsBlock.appendChild(commitsPersonal);
-    commitsCard.appendChild(commitsDate);
-    commitsCard.appendChild(commitsBlock);
-    commitsCard.appendChild(commitsText);
+    wiperSlide.appendChild(commitsDate);
+    wiperSlide.appendChild(commitsBlock);
+    wiperSlide.appendChild(commitsText);
 
     commitsDate.innerHTML = this.formatDate(this.date)
     if (this.avatar_url == null) {
@@ -43,7 +43,7 @@ export default class CommitCard {
     commitsEmail.innerHTML = this.email;
     commitsText.innerHTML = this.message;
 
-    return commitsCard
+    return wiperSlide
   }
 
   formatDate (date) {

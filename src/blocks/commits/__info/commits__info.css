@@ -1,6 +1,6 @@
 .commits__info {
   margin: 0 104px;
-  padding-top: 72px;
+  padding: 72px 0;
   display: flex;
   justify-content: space-between;
 }

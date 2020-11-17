@@ -3,8 +3,12 @@
 @import url(./__title/commits__title.css);
 @import url(./__arrow/commits__arrow.css);
 @import url(./__block/commits__block.css);
-@import url(./__card/commits__card.css);
-@import url(./__cards/commits__cards.css);
+
+/* Подключение стилей для слайдера*/
+@import url(./__swiper-wrapper/swiper-wrapper.css);
+@import url(./__swiper-slide/swiper-slide.css);
+@import url(./__swiper-container/swiper-container.css);
+
 @import url(./__date/commits__date.css);
 @import url(./__email/commits__email.css);
 @import url(./__image/commits__image.css);
@@ -18,4 +22,5 @@
   background-color: #F5F6F7;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }

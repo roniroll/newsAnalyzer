@@ -8,7 +8,7 @@ export function returnTodayDay () {
 //функция возвращающая 7 дней назад от сегодняшней даты, автоматически обновляется
 export function returnLastDay () {
   const date = new Date()
-  date.setDate(date.getDate() - 7)
+  date.setDate(date.getDate() - 6)
   const readyDate = date.toISOString()
   const lastDayForRequest = readyDate.substr(0,10)
   return lastDayForRequest

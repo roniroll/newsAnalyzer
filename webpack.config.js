@@ -15,7 +15,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chankhash].js'
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -64,26 +64,32 @@ module.exports = {
     new CleanWebpackPlugin (),
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      chunks: ['main'],
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
+      chunks: ['about'],
       filename: 'about.html'
     }),new HtmlWebpackPlugin({
       template: './src/analytics.html',
+      chunks: ['analytics'],
       filename: 'analytics.html'
     }),
     new MiniCssExtractPlugin({
       template: './src/pages/about-page.css',
-      filename: 'about-page.css'
+      chunks: ['about-page'],
+      filename: '[name].[contenthash].css'
     }),
     new MiniCssExtractPlugin({
       template: './src/pages/analytics-page.css',
-      filename: 'analytics-page.css'
+      chunks: ['analytics-page'],
+      filename: '[name].[contenthash].css'
     }),
     new MiniCssExtractPlugin({
       template: './src/pages/index-page.css',
-      filename: 'index-page.css'
+      chunks: ['index-page'],
+      filename: '[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

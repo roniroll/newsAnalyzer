@@ -18,6 +18,5 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     max-height: 224px;
-    margin-right: 18px;
   }
 }
