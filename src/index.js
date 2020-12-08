@@ -62,3 +62,16 @@ buttonShowMore.addEventListener('click', () => {
   }
 })
 
+
+let someStr = 'Anna Nedospasova'
+let regExp = /\w/;
+
+function check (str) {
+  let regExp = /[A-Z]/g;
+  let result = (str.match(regExp))
+  let newStr = result.join('.')
+  return newStr
+}
+
+check(someStr)
+
